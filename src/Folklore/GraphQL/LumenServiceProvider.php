@@ -9,7 +9,7 @@ class LumenServiceProvider extends ServiceProvider
      */
     protected function getRouter()
     {
-        return $this->app;
+        return $this->app->router;
     }
 
     /**
@@ -39,7 +39,7 @@ class LumenServiceProvider extends ServiceProvider
     {
         $configPath = __DIR__ . '/../../config';
         $viewsPath = __DIR__.'/../../resources/views';
-        $this->mergeConfigFrom($configPath . '/config.php', 'graphql');
+        $this->mergeConfigFrom($configPath . '/graphql.php', 'graphql');
         $this->loadViewsFrom($viewsPath, 'graphql');
     }
 

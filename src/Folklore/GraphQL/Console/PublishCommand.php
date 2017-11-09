@@ -42,9 +42,9 @@ class PublishCommand extends Command
         $this->files = $files;
         
         $paths = [
-            'config/config.php',
+            'config/graphql.php',
             'resources/views/graphiql.php',
-            'resources/graphql/introspection.txt',
+            'resources/graphql/introspectionQuery.txt',
             'resources/graphql/babelRelayPlugin.js'
         ];
         $fromPath = __DIR__ . '/../../..';

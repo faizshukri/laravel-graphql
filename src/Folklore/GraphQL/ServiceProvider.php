@@ -45,7 +45,7 @@ class ServiceProvider extends BaseServiceProvider
         $viewsPath = __DIR__.'/../../resources/views';
         $resourcesPath = __DIR__.'/../../resources/graphql';
 
-        $this->mergeConfigFrom($configPath.'/config.php', 'graphql');
+        $this->mergeConfigFrom($configPath.'/graphql.php', 'graphql');
 
         $this->loadViewsFrom($viewsPath, 'graphql');
 
